@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111">
+   <children>
+      <Pane layoutX="25.0" layoutY="14.0" prefHeight="369.0" prefWidth="550.0" style="-fx-background-color: yellow;">
+         <children>
+            <Text layoutX="36.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste de professeurs">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="358.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="modules enseignés">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="289.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classes">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <TableView layoutX="10.0" layoutY="106.0" prefHeight="200.0" prefWidth="211.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="id" />
+                <TableColumn prefWidth="75.0" text="Nom" />
+                  <TableColumn prefWidth="75.0" text="Grade" />
+              </columns>
+            </TableView>
+            <TableView layoutX="325.0" layoutY="106.0" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="libelle" />
+                <TableColumn prefWidth="75.0" text="classe" />
+              </columns>
+            </TableView>
+            <ComboBox layoutX="350.0" layoutY="23.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
