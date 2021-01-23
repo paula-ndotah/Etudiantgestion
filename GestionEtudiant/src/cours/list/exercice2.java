@@ -5,11 +5,16 @@
  */
 package cours.list;
 
+import java.util.ArrayList;
+import java.util.List;
+
+
+
 /**
  *
- * @author acer
+ * @author user
  */
-public class exercice2 {
+public class Exercice2 {
 
     /**
      * @param args the command line arguments
@@ -17,6 +22,8 @@ public class exercice2 {
     public static void main(String[] args) {
         // TODO code application logic here
        
+         
+         
     }
     
 }

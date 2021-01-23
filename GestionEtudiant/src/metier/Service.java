@@ -5,21 +5,22 @@
  */
 package metier;
 
-import DAO.DaoClasse;
-import DAO.DaoDetails;
-import DAO.DaoPersonne;
+import dao.DaoClasse;
+import dao.DaoDetails;
+import dao.DaoPersonne;
 import java.util.List;
-import models.Classe;
-import models.Details;
-import models.Personne;
-import models.Professeur;
+import model.Classe;
+import model.Details;
+import model.Etudiant;
+import model.Personne;
+import model.Professeur;
 
 /**
  *
- * @author acer
+ * @author user
  */
 public class Service {
-     private DaoClasse daoClasse;
+    private DaoClasse daoClasse;
     private DaoPersonne daoPersonne;
     private DaoDetails daoDetails;
 
@@ -62,13 +63,17 @@ public class Service {
         return daoDetails.insert(details)!=0;
         
     }
-    public List<Personne> listerProfesseur(){
-        return daoPersonne.findAll();
+    public List<Professeur> listerProfesseur(){
+        return daoPersonne.findProfesseur();
     }
-   public List<Details> findModulesByProfesseur(Personne pers){
-       return daoDetails.findModulesByProfesseur(pers);
-   }
-   public List<Details> findModulesByClasse(Classe classe){
-       return daoDetails.findModulesByClasse(classe);
-   }
+    public List<String> listerModulesProfesseurParClasse(Classe classe,Professeur professeur){
+        Details details=new Details(classe,professeur);
+        return daoDetails.findModules(details);
+    }
+    
+    public Personne seConnecter(String login,String pwd){
+        return daoPersonne.findUserConnect(login, pwd);
+    }
+   
+    
 }

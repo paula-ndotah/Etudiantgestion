@@ -8,12 +8,9 @@ package cours.list;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
-
 /**
  *
- * @author acer
+ * @author user
  */
 public class Exercice1 {
 
@@ -23,52 +20,53 @@ public class Exercice1 {
     public static void main(String[] args) {
         // TODO code application logic here
         /*
-        1-creer une liste String
-        2-ajouter des elements
-        4-supprimer des elements
-        3-affichage de la liste
-        5-modifier un element de la liste
-        6-rechercher un element de la liste
+            1-creer une liste String
+            Ajouter des elements
+            Supprimer des elements
+            Affichage de la liste
+            Modifier un element de la liste
+            Rechercher un element de la liste
+        
         */
         //1-creer une liste String
         List<String> lString=new ArrayList();
+        
         //2-ajouter des elements
         lString.add("Bonjour");
-        lString.add("Au Revoir");
-        lString.add("Les Etudiants de la Liage 3");
-       //3-affichage de la list
+        lString.add("Au revoir");
+        lString.add("les Etudiants de la Liage 3");
+        
+        //3- Affichage de la liste
         //Methode1
-        for(String elt:lString){
-            System.out.println(elt);
-        }
-        lString.add(0, "Debut");
         lString.forEach((elt) -> {
             System.out.println(elt);
         });
-        //4-supprimer des elements
+            lString.add(0, "Debut");
+            lString.forEach((elt) -> {
+                System.out.println(elt);
+        });
+        
+        //4- Supprimer les elements
         lString.remove("Debut");
         lString.remove(2);
-        System.out.println("Affichage apres Suppression");
+        System.out.println("Affichage après supression");
         lString.forEach((elt) -> {
             System.out.println(elt);
         });
+        
         //5-modifier un element de la liste
         lString.set(0, "Bonsoir");
-        System.out.println("Affichage apres Modification");
+        System.out.println("Affichage apres modification");
         lString.forEach((elt) -> {
             System.out.println(elt);
         });
+        
         //6-rechercher un element de la liste
         if(lString.contains("Bonsoir")==true){
-            System.out.println("Element existe");   
+            System.out.println("Element existe");
         }else{
-            System.out.println("Element n'existe pas");
+            System.out.println("Element Pas Exite");
         }
-        
-        
-        
-        
-        
     }
     
 }

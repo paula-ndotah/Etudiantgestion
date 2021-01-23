@@ -3,35 +3,43 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DAO;
+package dao;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import models.Classe;
-import models.Details;
-import models.Personne;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import model.Classe;
+import model.Details;
+import model.Personne;
+import model.Professeur;
 
 /**
  *
- * @author acer
+ * @author user
  */
-public class DaoDetails {
+public class DaoDetails implements IDao<Details> {
+    
     private final String SQL_INSERT="INSERT INTO `details` (`modules`, `annee`, `classe_id`, `professeur_id`) VALUES ('?', '?',?,?);";
-    private final String SQL_SELECT_BY_PROFESSEUR="select modules and classe_id from details where professeur_id=?";
-    private final String SQL_SELECT_BY_CLASSE="select modules from details where classe_id=? and professeur_id=?";
+    private final String SQL_SELECT_MODULES="select * from details where classe_id=? and professeur_id=?";
+     private DaoMySql mysql;
+    @Override
+    //override:methode redéfinie
     public int insert(Details details){
         int nbreLigne=0;
-        //Traitement insertion
-        return nbreLigne;
+         return nbreLigne;   
+   
     }
-    public List<Details> findModulesByProfesseur(Personne pers){
-    List<Details> lModules=new ArrayList<>();
-    //Recuperation
-    return lModules;
-    
-}
-    public List<Details> findModulesByClasse(Classe classe){
-        List<Details> lModules=new ArrayList<>();
+       
+
+    public List<String>findModules(Details details){
+        List<String> lModules=new ArrayList<>();
+        
+        //Remplir la liste
         return lModules;
+
     }
+    
 }
