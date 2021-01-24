@@ -57,7 +57,7 @@ public class DaoPersonne implements IDao<Personne>{
                 Classe cl=new Classe();
                 cl.setId(rs.getInt("classe_id"));
                 cl.setLibelle(rs.getString("libelle"));
-                cl.setNbre(rs.getInt("nbre"));
+                cl.setNbre(rs.getInt("nombre"));
                 //faire la relation
                 etu.setCl(cl);
                 //ajouter l'étudiant dans la liste

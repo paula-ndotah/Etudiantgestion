@@ -45,7 +45,7 @@
             <Accordion layoutX="131.0" layoutY="192.0" />
             <TableView layoutX="9.0" layoutY="183.0" prefHeight="165.0" prefWidth="585.0">
                <columns>
-                  <TableColumn prefWidth="199.0" text="Libelle" />
+                  <TableColumn prefWidth="584.0" text="Libelle" />
                </columns>
             </TableView>
             <TextField layoutX="104.0" layoutY="119.0" />

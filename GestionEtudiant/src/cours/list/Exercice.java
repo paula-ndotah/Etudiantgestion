@@ -14,7 +14,7 @@ import java.util.List;
  *
  * @author user
  */
-public class Exercice {
+public class Exercice  {
 
     /**
      * @param args the command line arguments

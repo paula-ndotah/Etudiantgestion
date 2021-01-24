@@ -20,6 +20,7 @@ import model.Professeur;
  * @author user
  */
 public class Service {
+    
     private DaoClasse daoClasse;
     private DaoPersonne daoPersonne;
     private DaoDetails daoDetails;

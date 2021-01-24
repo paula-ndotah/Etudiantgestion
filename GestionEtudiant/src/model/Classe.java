@@ -35,6 +35,8 @@ public class Classe {
         this.libelle = libelle;
         this.nbre = nbre;
     }
+
+    
     
     
     public int getId() {
@@ -64,6 +66,10 @@ public class Classe {
     @Override
     public String toString() {
         return "Classe{" + "id=" + id + ", libelle=" + libelle + ", nbre=" + nbre + '}';
+    }
+
+    public boolean creerClasse(Classe classe) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

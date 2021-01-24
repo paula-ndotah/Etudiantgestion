@@ -79,7 +79,7 @@ public class DaoClasse implements IDao<Classe> {
                            */
                            cl.setId(rs.getInt("id"));
                            cl.setLibelle(rs.getString("libelle"));
-                           cl.setNbre(rs.getInt("nbre"));
+                           cl.setNbre(rs.getInt("nombre"));
                            //ajout dans la liste
                            lClasses.add(cl);
                     }
